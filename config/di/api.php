@@ -9,8 +9,8 @@ return [
         "api" => [
             "shared" => true,
             "callback" => function () {
-                $apikeys = new \Anax\apikeys\apikeys();
-                return $apikeys;
+                $ApiKeys = new \Anax\ApiKeys\ApiKeys();
+                return $ApiKeys;
             }
         ],
     ],

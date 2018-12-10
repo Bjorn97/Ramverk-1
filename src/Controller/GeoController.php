@@ -15,7 +15,6 @@ class GeoController implements ContainerInjectableInterface
         $keys = $this->di->get("api");
         $location = "";
         $res = "";
-        $default = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';
         $forcast = "";
         // $page->add("anax/IPController/", [
         //     "thing" => "goes as var to view",
@@ -33,7 +32,6 @@ class GeoController implements ContainerInjectableInterface
                 $forcast = $weather->weather($location->latitude, $location->longitude, $keys->getKeys("darksky"));
             } else {
                 $res = "$adress is not a valid IP address";
-                
             }
         }
         $page->add("anax/ip-locator/index", [

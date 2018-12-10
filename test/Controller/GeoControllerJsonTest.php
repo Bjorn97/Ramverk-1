@@ -36,7 +36,6 @@ class GeoControllerJsonTest extends TestCase
         //$this->assertContains("1.1.1.1 is a valid IP address", $res);
 
         $this->assertNotNull($res);
-
     }
     
     public function testIndexActionFail()
@@ -45,6 +44,5 @@ class GeoControllerJsonTest extends TestCase
         $res = $this->controller->indexAction();
         //$this->assertContains("1.1.1.1 is a valid IP address", $res);
         $this->assertNotNull($res);
-
     }
 }

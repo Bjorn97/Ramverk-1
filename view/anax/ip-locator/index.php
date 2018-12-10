@@ -20,22 +20,22 @@ namespace Anax\View;
         <div class="info1"><b>input:</b><p> IP - address</p> </div>
     </div>
     <div class="result">
-        <?php 
-            if ($forcast != "") {
-                for ($i=0; $i < 8; $i++) {
-                    $time = $forcast->{"daily"}->{"data"}[$i]->{"time"};
-                    ?>
-                    <?=gmdate("Y-m-d", $time);?><br>
-                    <?=
-                    $forcast->{"daily"}->{"data"}[$i]->{"summary"};?><br><?=
-                    " with highest temprature being " . $forcast->{"daily"}->{"data"}[$i]->{"apparentTemperatureHigh"};?><br><?=
-                    " and lowest being " . $forcast->{"daily"}->{"data"}[$i]->{"apparentTemperatureLow"};?><br><br><?php
-                }
-            }else {
-                echo($res);
+        <?php
+        if ($forcast != "") {
+            for ($i=0; $i < 8; $i++) {
+                $time = $forcast->{"daily"}->{"data"}[$i]->{"time"};
+                ?>
+                <?=gmdate("Y-m-d", $time);?><br>
+                <?=
+                $forcast->{"daily"}->{"data"}[$i]->{"summary"};?><br><?=
+                " with highest temprature being " . $forcast->{"daily"}->{"data"}[$i]->{"apparentTemperatureHigh"};?><br><?=
+                " and lowest being " . $forcast->{"daily"}->{"data"}[$i]->{"apparentTemperatureLow"};?><br><br><?php
             }
+        } else {
+                echo($res);
+        }
 
-         ?>
+        ?>
     </div>
     </div>
     <div
@@ -60,8 +60,8 @@ namespace Anax\View;
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([
-              <?=$location->longitude ?? 39.03385 ?>,
-              <?=$location->latitude ?? 125.75432 ?>
+                <?=$location->longitude ?? 39.03385 ?>,
+                <?=$location->latitude ?? 125.75432 ?>
           ]),
           zoom: 10
         })

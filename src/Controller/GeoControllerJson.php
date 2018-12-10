@@ -15,7 +15,6 @@ class GeoControllerJson implements ContainerInjectableInterface
         $keys = $this->di->get("api");
         $location = "";
         $res = "";
-        $default = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';
         $forcast = "";
         $bool = 2;
         $json = [];
@@ -50,7 +49,6 @@ class GeoControllerJson implements ContainerInjectableInterface
                     "low" => " and lowest being " . $forcast->{"daily"}->{"data"}[$i]->{"apparentTemperatureLow"}
                 ]);
             }
-            
         } else {
             $json = [
                 "ip" => $adress,
@@ -58,7 +56,7 @@ class GeoControllerJson implements ContainerInjectableInterface
             ];
         }
         return [$json];
-        }
+    }
     // public function ipController($adress)
     // {
     //

@@ -1,12 +1,12 @@
-<?php  
+<?php
 
 
-namespace Anax\apikeys;
+namespace Anax\ApiKeys;
 
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
 
-class apikeys implements ContainerInjectableInterface
+class ApiKeys implements ContainerInjectableInterface
 {
     use ContainerInjectableTrait;
     

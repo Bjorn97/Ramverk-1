@@ -9,7 +9,7 @@ namespace Anax\View;
         <input type="text" name="ip" value="<?=$default?>"><br>
         <input type="submit" name="submit" value="validate"><br>
     <p><?= $res; ?></p><br>
-    <p><?php 
+    <p><?php
     if ($num == 1) {
             echo(gethostbyaddr($adress));
     }
