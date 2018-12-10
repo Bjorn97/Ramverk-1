@@ -1,0 +1,163 @@
+html {
+    overflow-y: scroll;  
+    background-color: #424242;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+.ip-test1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper_ip {
+    width: 100%;
+    text-decoration: none;
+    margin-top: 50px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper_ip a {
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+.wrapper_ip .ip-test {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.wrapper_info{
+    justify-content: center;
+    display: flex;
+}
+
+.info1 {
+    border: 1px solid;
+    width: 200px;
+    height: 35px;
+    margin: 25px;
+    display: flex;
+    text-align: center;
+}
+
+.info1 b {
+    background-color: limegreen;
+    width: 20%;
+    padding: 5px;
+    
+}
+
+.info1 p {
+    width: 80%;
+    height: 35px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.site-logo-text {
+    font-size: 42px;
+    line-height: 1;
+    text-shadow: 2px -2px 2px #ccc;
+    padding-left: 8px;
+}
+
+.site-logo-text-icon img{
+    vertical-align: bottom;
+}
+
+.site-logo-text a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.inner-wrap.inner-wrap-header{
+    background-color: #2ecc71;
+    width: 100%;
+}
+
+.inner-wrap.inner-wrap-header .row .region-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner-wrap.inner-wrap-flash .row .region-flash{
+    margin-left: 25%;
+    margin-top: 50px;
+}
+
+.region-header img{
+    display: none;
+}
+
+
+.rm-navbar{
+    list-style-type: none;
+}
+
+.navbar a{
+    font-size: 1.3em;
+     padding: 0.5em;
+     text-decoration: none;
+     
+}
+
+.article{
+    font-family: 'Domine', serif;
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.figure.right img{
+    float: right;
+    margin-left: 50px;
+}
+
+.outer-wrap.inner-wrap-footer {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.outer-wrap-flash.outer-wrap-footer {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.outer-wrap-flash .row {
+        max-width: 100%;
+}
+
+.region-footer {
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #ccc;
+}
+
+.footer-column-wrapper {
+    display: flex;
+}
+
+.site-copyright {
+    text-align: center;
+}
+
+main{
+    margin-bottom: 500px;
+}
