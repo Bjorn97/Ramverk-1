@@ -58,5 +58,10 @@ return [
             "url" => "geo",
             "title" => "locate an ip adress",
         ],
+        [
+            "text" => "Book",
+            "url" => "book",
+            "title" => "add and delete books",
+        ],
     ],
 ];
